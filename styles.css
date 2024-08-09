@@ -8,6 +8,19 @@ body{
     background: #0b1522;
 }
 
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(.07);
+    }
+
+}
+
 .heart{
     height: 70px;
     width: 70px;
