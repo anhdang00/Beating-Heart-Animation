@@ -24,20 +24,28 @@ body{
 
 @keyframes colorChange {
     0%{
+        background-color: #ffdae0;
+        box-shadow: -10px -10px 90px #ffdae0;
+    }
+    20%{
+        background-color: #fb99b1;
+        box-shadow: -10px -10px 90px #fb99b1;
+    }
+    40%{
+        background-color: #f74c7b;
+        box-shadow: -10px -10px 90px #f74c7b;
+    }
+    60%{
         background-color: #f20044;
         box-shadow: -10px -10px 90px #f20044;
     }
-    25%{
-        background-color: yellow;
-        box-shadow: -10px -10px 90px yellow;
-    }
-    50%{
-        background-color: greenyellow;
-        box-shadow: -10px -10px 90px greenyellow;
+    80%{
+        background-color: #f74c7b;
+        box-shadow: -10px -10px 90px #f74c7b;
     }
     100%{
-        background-color: blue;
-        box-shadow: -10px -10px 90px blue;
+        background-color: #fb99b1;
+        box-shadow: -10px -10px 90px #fb99b1;
     }
 }
 
@@ -48,7 +56,7 @@ body{
     position: relative;
     transform: rotate(-45deg);
     box-shadow: -10px 10px 90px #f20044;
-    animation: heart 0.6s linear infinite, colorChange .6s infinite;
+    animation: heart 0.6s linear infinite, colorChange 3s infinite;
 }
 
 .heart:before{
@@ -60,7 +68,7 @@ body{
     border-radius: 50px;
     top: -50%;
     box-shadow: -10px -10px 90px #f20044;
-    animation: colorChange .6s infinite;
+    animation: colorChange 3s infinite;
     
 }
 
@@ -73,5 +81,5 @@ body{
     border-radius: 50px;
     right: -50%;
     box-shadow: 10px -10px 90px #f20044;
-    animation: colorChange .6s infinite;
+    animation: colorChange 3s infinite;
 }
