@@ -11,12 +11,20 @@ body{
 @keyframes heart{
     0%{
         transform: rotate(-45deg) scale(1.07);
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: greenyellow;
     }
     80%{
         transform: rotate(-45deg) scale(1.0);
     }
     100%{
         transform: rotate(-45deg) scale(.07);
+        background-color: blue;
     }
 
 }
