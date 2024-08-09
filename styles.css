@@ -37,7 +37,6 @@ body{
     width: 70px;
     background-color: #f20044;
     position: absolute;
-    transform: rotate(-45deg);
     border-radius: 50px;
     top: -50%;
     box-shadow: -10px -10px 90px #f20044;
@@ -49,7 +48,6 @@ body{
     width: 70px;
     background-color: #f20044;
     position: absolute;
-    transform: rotate(-45deg);
     border-radius: 50px;
     right: -50%;
     box-shadow: 10px -10px 90px #f20044;
