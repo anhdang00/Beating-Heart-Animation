@@ -27,7 +27,6 @@ body{
     transform: rotate(-45deg);
     border-radius: 50px;
     box-shadow: -10px -10px 90px #f20044;
-    animation: heart 0.6s linear infinite;
 }
 
 .heart:after{
@@ -38,6 +37,5 @@ body{
     position: absolute;
     transform: rotate(-45deg);
     border-radius: 50px;
-    box-shadow: -10px -10px 90px #f20044;
-    animation: heart 0.6s linear infinite;
+    box-shadow: 10px -10px 90px #f20044;
 }
