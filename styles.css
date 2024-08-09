@@ -11,13 +11,6 @@ body{
 @keyframes heart{
     0%{
         transform: rotate(-45deg) scale(1.07);
-        background-color: red;
-    }
-    25%{
-        background-color: yellow;
-    }
-    50%{
-        background-color: greenyellow;
     }
     80%{
         transform: rotate(-45deg) scale(1.0);
@@ -29,6 +22,18 @@ body{
 
 }
 
+@keyframes colorChange {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: greenyellow;
+    }
+}
+
 .heart{
     height: 70px;
     width: 70px;
@@ -36,7 +41,7 @@ body{
     position: relative;
     transform: rotate(-45deg);
     box-shadow: -10px 10px 90px #f20044;
-    animation: heart 0.6s linear infinite;
+    animation: heart 0.6s linear infinite, colorChange .2s;
 }
 
 .heart:before{
@@ -48,6 +53,7 @@ body{
     border-radius: 50px;
     top: -50%;
     box-shadow: -10px -10px 90px #f20044;
+    animation: colorChange .2s;
 }
 
 .heart:after{
@@ -59,4 +65,5 @@ body{
     border-radius: 50px;
     right: -50%;
     box-shadow: 10px -10px 90px #f20044;
+    animation: colorChange .2s;
 }
